@@ -205,6 +205,23 @@
     background-color: #2b2b2b;
     transform: translateX(3px);
 }
+        .source-logos {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.source-logos img {
+    height: 32px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.source-logos img:hover {
+    opacity: 1;
+}
+
 
     </style>
 </head>
@@ -673,13 +690,15 @@
             • Compréhension avancée de la sécurité Zero-Trust.
         </p>
 
-        <h4>6. Sources</h4>
-        <p>
-            • ANSSI – Recommandations ZTNA.<br>
-            • Gartner – SASE Trends 2024.<br>
-            • Cisco Zero-Trust Whitepaper.
-        </p>
-    </div>
+    <h4>6. Sources</h4>
+<div class="source-logos">
+    <img src="assets/logos/docker.png" alt="Docker">
+    <img src="assets/logos/kubernetes.png" alt="Kubernetes">
+    <img src="assets/logos/cncf.png" alt="CNCF">
+    <img src="assets/logos/anssi.png" alt="ANSSI">
+    <img src="assets/logos/trendmicro.png" alt="Trend Micro">
+</div>
+
 
     <!-- OUTILS DE VEILLE -->
     <div class="bloc" style="margin-top:25px;">
