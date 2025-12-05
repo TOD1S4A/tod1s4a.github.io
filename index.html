@@ -586,13 +586,94 @@
 
 
         <!-- E6 RESEAU -->
-        <section id="e6-reseau">
-            <h2>E6 Réseau</h2>
-            <p>
-                Cette partie présentera les travaux réalisés autour du réseau :
-                configuration de switchs, routeurs, VLAN, routage, NAT, etc.
-            </p>
-        </section>
+    <section id="e6-reseau">
+    <h2>E6 – Étude de Situation professionnelle (Partie Réseau)</h2>
+
+    <p>
+        Cette étude porte sur la mise en place d’une <strong>interconnexion sécurisée entre plusieurs sites</strong>
+        d’une entreprise via un <strong>VPN site-à-site</strong>, en utilisant pfSense ou OPNsense.
+        L’objectif principal est d’assurer une communication fiable, chiffrée et redondante entre les agences.
+    </p>
+
+    <div class="bloc">
+        <h3>🛰️ Projet Réseau – Interconnexion de 2 ou 3 sites via VPN (pfSense / OpenVPN / IPSec)</h3>
+
+        <p>
+            Ce projet consiste à relier plusieurs agences d’une entreprise au siège à l’aide de tunnels
+            <strong>VPN IPSec ou OpenVPN</strong>. Ce type de solution est très utilisé dans le monde professionnel
+            pour sécuriser les échanges inter-sites et garantir la continuité des activités.
+        </p>
+
+        <h4>🎯 Objectif du projet</h4>
+        <p>
+            • Relier plusieurs agences à travers un tunnel VPN sécurisé.<br>
+            • Garantir la confidentialité, l’intégrité et la disponibilité des communications.<br>
+            • Mettre en place une redondance WAN pour assurer la continuité de service.<br>
+            • Structurer les règles firewall pour maîtriser les flux inter-sites.
+        </p>
+
+        <h4>🧰 Compétences mobilisées</h4>
+        <p>
+            • Configuration pfSense / OPNsense.<br>
+            • Mise en place VPN IPSec ou OpenVPN site-à-site.<br>
+            • Routage statique / dynamique.<br>
+            • Gestion de la redondance WAN (failover).<br>
+            • Création et application de règles firewall.<br>
+            • Implémentation optionnelle de QoS (VoIP).
+        </p>
+
+        <h4>🏗️ Architecture du projet</h4>
+        <p>Voici le schéma illustrant l’architecture réseau mise en place :</p>
+
+        <div style="text-align:center; margin-top:15px;">
+            <img src="assets/projets/reseau/schema-vpn.png"
+                 alt="Architecture VPN Multi-Sites"
+                 style="max-width:90%; border-radius:10px;">
+        </div>
+
+        <h4>📑 Missions réalisées</h4>
+        <p>
+            <strong>1️⃣ Analyse & préparation</strong><br>
+            • Définition des sous-réseaux LAN pour chaque site.<br>
+            • Analyse des besoins (services à communiquer, sécurité, redondance).<br>
+            • Élaboration du plan d’adressage IP.
+
+            <br><br><strong>2️⃣ Installation & configuration des firewalls (pfSense/OPNsense)</strong><br>
+            • Configuration WAN/LAN.<br>
+            • Paramétrage DHCP, DNS, passerelles.
+
+            <br><br><strong>3️⃣ Mise en place du tunnel VPN</strong><br>
+            • Choix du protocole : OpenVPN ou IPSec.<br>
+            • Configuration Phase 1 / Phase 2 (IPSec).<br>
+            • Tests de connectivité entre les sites.
+
+            <br><br><strong>4️⃣ Routage inter-sites</strong><br>
+            • Routage statique pour les LAN distants.<br>
+            • Vérification du chemin emprunté via ping et traceroute.
+
+            <br><br><strong>5️⃣ Redondance WAN (Failover)</strong><br>
+            • Configuration d’un Gateway Group.<br>
+            • Tests de bascule WAN1 → WAN2.
+
+            <br><br><strong>6️⃣ Sécurisation via Firewall Rules</strong><br>
+            • Autorisation des flux strictement nécessaires.<br>
+            • Mise en place du principe de moindre privilège.
+
+            <br><br><strong>7️⃣ QoS (optionnel)</strong><br>
+            • Priorisation du trafic VoIP / critique.<br>
+            • Tests de bande passante contrôlée.
+        </p>
+
+        <h4>📚 Compétences E6 validées</h4>
+        <p>
+            • Installer, configurer et administrer un firewall.<br>
+            • Assurer la communication sécurisée entre plusieurs sites.<br>
+            • Mettre en place des services réseaux sécurisés (VPN IPSec / OpenVPN).<br>
+            • Implémenter des solutions de redondance et de haute disponibilité.<br>
+            • Documenter une solution technique complète.
+        </p>
+    </div>
+</section>
 
         <!-- VEILLE -->
        <section id="veille">
