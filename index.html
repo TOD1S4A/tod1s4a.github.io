@@ -523,51 +523,65 @@
         Elle illustre mes compétences en <strong>administration système, sécurité et architecture réseau</strong>.
     </p>
 
-    <div class="bloc">
-        <h3>Projet Système – Infrastructure Hub-and-Spoke (3 sites interconnectés)</h3>
+  <div class="bloc">
+    <h3>🛠️ Projet Système – Installation d’un serveur de sauvegarde automatisée</h3>
 
-        <img src="assets/projets/architecture-hub-spoke.png"
-             alt="Architecture Hub-and-Spoke multi-sites"
-             style="width:100%; border-radius:10px; margin:15px 0;">
+    <p>
+        Dans ce projet, j’ai mis en place une solution de <strong>sauvegarde automatisée</strong>
+        basée sur les bonnes pratiques professionnelles, incluant la stratégie
+        <strong>3-2-1</strong>, l’automatisation par scripts et la restauration de données.
+        Le but est d’assurer la continuité d’activité en cas d’incident, panne matériel ou erreur humaine.
+    </p>
 
-        <p>
-            L’architecture repose sur un modèle <strong>Hub-and-Spoke</strong> :  
-            le site de <strong>Melun</strong> centralise les services critiques tandis que 
-            les sites <strong>Provins</strong> et <strong>Santeny</strong> se connectent
-            via des <strong>Tunnels IPsec</strong>.
-        </p>
+    <h4>📌 Objectifs du projet</h4>
+    <p>
+        • Mettre en place un serveur dédié aux sauvegardes.<br>
+        • Automatiser les tâches de sauvegarde (incrémentielle / complète).<br>
+        • Sécuriser les sauvegardes (permissions, rotation, stockage externe).<br>
+        • Documenter les procédures de restauration.<br>
+        • Tester la récupération des fichiers en situation réelle.
+    </p>
 
-        <h4>Objectifs du projet</h4>
-        <p>
-            • Centraliser les services dans un environnement sécurisé.<br>
-            • Assurer la communication inter-sites via des tunnels VPN IPsec.<br>
-            • Mettre en place une architecture <strong>sécurisée, redondante et stable</strong>.<br>
-            • Intégrer Windows Server (Active Directory) et Linux (base MariaDB, supervision Zabbix).<br>
-            • Gérer les accès via des <strong>ACL, VLAN</strong> et pare-feux.
-        </p>
+    <h4>🔧 Technologies & outils utilisés</h4>
+    <p>
+        • Rsync / Veeam / Bacula (selon scénario).<br>
+        • Scripts Bash ou PowerShell.<br>
+        • Planification via CRON / Planificateur Windows.<br>
+        • Serveur NAS ou stockage distant.<br>
+        • Stratégie 3-2-1 (Local + Disque externe + Cloud/NAS).
+    </p>
 
-        <h4>Compétences E6 mobilisées</h4>
-        <p>
-            • Déployer et administrer <strong>Windows Server / Active Directory</strong>.<br>
-            • Déployer et configurer des services <strong>Linux</strong> (DB, supervision).<br>
-            • Configurer une <strong>infrastructure VPN</strong> entre plusieurs sites.<br>
-            • Assurer la <strong>sécurité système</strong> (ACL, segmentation, redondance).<br>
-            • Documenter, schématiser et mettre en œuvre une architecture complète.
-        </p>
+    <h4>🏗️ Architecture du projet</h4>
+    <p>
+        Voici le schéma d’architecture illustrant en détail la structure du système de sauvegarde :
+    </p>
 
-        <h4>Technologies utilisées</h4>
-        <p>
-            <span class="tag">Windows Server</span>
-            <span class="tag">Active Directory</span>
-            <span class="tag">Linux</span>
-            <span class="tag">MariaDB</span>
-            <span class="tag">Zabbix</span>
-            <span class="tag">IPsec VPN</span>
-            <span class="tag">ACL</span>
-            <span class="tag">VLAN</span>
-            <span class="tag">Hub-and-Spoke</span>
-        </p>
+    <div style="text-align:center; margin-top:15px;">
+        <img src="assets/projets/sauvegarde/schema-sauvegarde.png" 
+             alt="Architecture Serveur de Sauvegarde" 
+             style="max-width:90%; border-radius:10px;">
     </div>
+
+    <h4>📚 Compétences E6 mobilisées</h4>
+    <p>
+        • Mise en place d’une stratégie de sauvegarde (3-2-1).<br>
+        • Automatisation par scripts (Bash / PowerShell).<br>
+        • Administration d’un serveur dédié aux sauvegardes.<br>
+        • Gestion des droits et sécurisation du stockage.<br>
+        • Tests de restauration et documentation technique.
+    </p>
+
+    <h4>🧪 Étapes réalisées</h4>
+    <p>
+        1️⃣ Analyse des besoins et choix de la solution.<br>
+        2️⃣ Installation du serveur de sauvegarde.<br>
+        3️⃣ Configuration des jobs (complet, incrémentiel).<br>
+        4️⃣ Mise en place des scripts + automatisation CRON.<br>
+        5️⃣ Test de restauration de fichiers.<br>
+        6️⃣ Documentation et validation du projet.
+    </p>
+</div>
+
 </section>
 
 
